@@ -96,7 +96,6 @@
     // Update the quote when the `update_quote` button is clicked
     d3.select("#update_quote").on("click", () => {
       randomQuote = _.sample(quotes, 1);
-      d3.select(".quote_prompt").(d => randomQuote[0].prompt);
       d3.select(".quote_text").text(d => randomQuote[0].quote);
       d3.select(".quote_source").text(d => " " + randomQuote[0].name);
     });
