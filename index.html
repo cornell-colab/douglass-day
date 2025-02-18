@@ -31,7 +31,7 @@
   <meta name="citation_title" content=""/>
   <meta name="citation_journal_title" content="Douglass Day at Cornell"/>
 
-  <!-- Twitter cards -->
+  <!-- main -->
 
   <style type="text/css">
   @font-face {
@@ -85,6 +85,10 @@
       .enter();
 
     texts.append("text")
+      .attr("class", "quote_prompt")
+      .text(d => d.prompt );
+
+    texts.append("text")
       .attr("class", "quote_text")
       .text(d => d.quote );
 
@@ -97,6 +101,7 @@
       randomQuote = _.sample(quotes, 1);
       d3.select(".quote_text").text(d => randomQuote[0].quote);
       d3.select(".quote_source").text(d => " " + randomQuote[0].name);
+      d3.select(".quote_source").text(d => " " + randomQuote[0].prompt);
     });
   });
   </script>
