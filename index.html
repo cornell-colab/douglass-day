@@ -6,9 +6,9 @@
   <meta charset="utf-8" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="description" content="How people define digital humanities." />
-  <meta name="author" content="Jason A. Heppler" />
-  <meta name="keywords" content="digital history, digital humanities" />
-  <meta name="copyright" content="Copyright (c) 2017 Jason Heppler" />
+  <meta name="author" content="cornell-colab" />
+  <meta name="keywords" content="digital history, digital humanities, black dh" />
+  <meta name="copyright" content="cornell-colab" />
   <title>Douglass Day at Cornell</title>
 
   <script src="lib/underscore-min.js"></script>
@@ -20,24 +20,18 @@
 
     <!-- RDFa Metadata (in OpenGraph) -->
   <meta property="og:title" content="" />
-  <meta property="og:author" content="http://whatisdigitalhumanities.com" />
-  <meta property="og:site_name" content="What is Digital Humanities" />
+  <meta property="og:author" content="https://cornell-colab.github.io/douglass-day" />
+  <meta property="og:site_name" content="Douglass Day at Cornell" />
   <meta property="og:url" content="/" />
   <meta property="og:type" content="website" />
 
   <!-- Google Scholar Metadata -->
-  <meta name="citation_author" content="Jason A. Heppler"/>
-  <meta name="citation_date" content="2017-03-08 14:20:40 -0600"/>
+  <meta name="citation_author" content="Iliana Burgos"/>
+  <meta name="citation_date" content="2025"/>
   <meta name="citation_title" content=""/>
-  <meta name="citation_journal_title" content="What is Digital Humanities"/>
+  <meta name="citation_journal_title" content="Douglass Day at Cornell"/>
 
   <!-- Twitter cards -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@jaheppler">
-  <meta name="twitter:creator" content="@jaheppler">
-  <meta name="twitter:url" content="http://whatisdigitalhumanities.com">
-  <meta name="twitter:title" content="What is Digital Humanities">
-  <meta name="twitter:description" content="Perpetual answers to the perpetual question.">
 
   <style type="text/css">
   @font-face {
@@ -57,7 +51,7 @@
   button:hover {background-color: var(--link); border: 2px solid var(--link); color: var(--background);}
   </style>
 
-  <script defer data-domain="whatisdigitalhumanities.com" src="https://plausible.io/js/plausible.js"></script>
+  <script defer data-domain="cornell-colab.github.io/douglass-day" src="https://plausible.io/js/plausible.js"></script>
 
 </head>
 <body data-theme>
@@ -71,13 +65,13 @@
 
     <hr>
 
-    <p class="notes"><strong>NB</strong>: Click the <span style="border-bottom: 1px solid #000;">New quote</span> button to display a new random quote. Quotes were pulled from participants from the <a href="http://twitter.com/DayofDH">Day of DH</a> between 2009-2014. As of January 2015, the database contains 817 rows and randomly selects a quote each time the page is loaded. If you want to do something cool with the data, I am providing the code and data <a href="http://github.com/hepplerj/whatisdigitalhumanities">here</a>.</p>
+    <p class="notes"><strong>NB</strong>: Click the <span style="border-bottom: 1px solid #000;">New quote</span> button to display a new random quote. Quotes were pulled from participants at Cornell University Library's celebration of <a href ="https://www.library.cornell.edu/about/staff/central-departments/digital-scholarship/colab-programs/annual-douglass-day-celebration/">Douglass Day</a> between 2022-2025. The original code for J. Heppler's tool is <a href="http://github.com/hepplerj/whatisdigitalhumanities">here</a>.</p>
 
     <p class="notes">Made by <a href="http://cornell-colab.github.io/">Digital CoLab @ Cornell</a>.
   </div>
 
   <script>
-  d3.csv("dayofquotes_full.csv", (error, quotes) => {
+  d3.csv("quotes_full.csv", (error, quotes) => {
     if (error) throw error;
     
     // Grab random line from CSV
